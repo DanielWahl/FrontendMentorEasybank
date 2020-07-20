@@ -1,94 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style/style.css" />
-  <title>Frontend Mentor | Easybank landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Easybank landing page</title>
 <body>
+<div class="global">
+    <nav class="" id="mainNav">
+        <div class="content flex spaceBetween">
+            <aside class="logoContainer">
+                <div class="logo"></div>
+            </aside>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
+            <aside class="navContainer">
+                <input type="checkbox" class="mobileCheckbox" />
+                <span class="mobileToggle"> </span>
+                <span class="mobileToggle"> </span>
+                <span class="mobileToggle"> </span>
 
 
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Careers</a></li>
+                </ul>
 
-  Why choose Easybank?
+            </aside>
 
-  We leverage Open Banking to turn your bank account into your financial hub. Control
-  your finances like never before.
+            <button>Request Invite</button>
+        </div>
+    </nav>
 
-  Online Banking
-  Our modern web and mobile applications allow you to keep track of your finances
-  wherever you are in the world.
+    <header id="mainHeader">
+        <div class="imageContainer grid half-half">
+            <div></div>
+            <aside class="right">
+                <div class="introBackground">
+                    <div class="introPhones"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="headingContainer content grid half-half">
+            <aside class="left">
+                <h1>Next generation digital banking</h1>
 
-  Simple Budgeting
-  See exactly where your money goes each month. Receive notifications when you’re
-  close to hitting your limits.
+                <p class="description">
+                    Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+                </p>
 
-  Fast Onboarding
-  We don’t do branches. Open your account in minutes online and start taking control
-  of your finances right away.
+                <button>Request Invite</button>
+            </aside>
+            <div></div>
 
-  Open API
-  Manage your savings, investments, pension, and much more from one account. Tracking
-  your money has never been easier.
+        </div>
+
+    </header>
+
+    <section id="whychoose">
+        <div class="content">
+            <h2>Why choose Easybank?</h2>
+
+            <p class="description">
+                We leverage Open Banking to turn your bank account into your financial hub. <br />
+                Control your finances like never before.
+            </p>
+
+            <div class="grid four-fourths">
+                <aside class="advantage">
+                    <img src="images/icon-online.svg" class="advantageIcon" />
+                    <h3>Online Banking</h3>
+                    <p>
+                        Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.
+                    </p>
+                </aside>
+
+                <aside class="advantage">
+                    <img src="images/icon-budgeting.svg" class="advantageIcon" />
+                    <h3>Simple Budgeting</h3>
+                    <p>
+                        See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.
+                    </p>
+                </aside>
+
+                <aside class="advantage">
+                    <img src="images/icon-onboarding.svg" class="advantageIcon" />
+                    <h3>Fast Onboarding</h3>
+                    <p>
+                        We don’t do branches. Open your account in minutes online and start taking control of your finances right away.
+                    </p>
+                </aside>
+
+                <aside class="advantage">
+                    <img src="images/icon-api.svg" class="advantageIcon" />
+                    <h3>Open API</h3>
+                    <p>
+                        Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </section>
 
 
+    <section id="articles">
+            <div class="content">
+            <h2>Latest Articles</h2>
 
-  Latest Articles
+            <div class="grid four-fourths">
+                <article>
+                    <header>
+                        <img src="images/image-currency.jpg" alt="currency"/>
+                    </header>
+                    <div class="articleContent">
+                        <div class="author">By Claire Robinson</div>
+                        <a><h4>Receive money in any currency with no fees</h4></a>
+                        <p class="description">
+                            The world is getting smaller and we’re becoming more mobile. So why should you be
+                            forced to only receive money in a single …
+                        </p>
+                    </div>
+                </article>
 
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be
-  forced to only receive money in a single …
+                <article>
+                    <header>
+                        <img src="images/image-restaurant.jpg" alt="restaurant"/>
+                    </header>
+                    <div class="articleContent">
+                        <div class="author">By Wilson Hutton</div>
+                        <a><h4>Treat yourself without worrying about money</h4></a>
+                        <p class="description">
+                            Our simple budgeting feature allows you to separate out your spending and set
+                            realistic limits each month. That means you …
+                        </p>
+                    </div>
+                </article>
 
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set
-  realistic limits each month. That means you …
+                <article>
+                    <header>
+                        <img src="images/image-plane.jpg" alt="plane"/>
+                    </header>
+                    <div class="articleContent">
+                        <div class="author">By Wilson Hutton</div>
+                        <a><h4>Take your Easybank card wherever you go</h4></a>
+                        <p class="description">
+                            We want you to enjoy your travels. This is why we don’t charge any fees on purchases
+                            while you’re abroad. We’ll even show you …
+                        </p>
+                    </div>
+                </article>
 
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-  while you’re abroad. We’ll even show you …
+                <article>
+                    <header>
+                        <img src="images/image-confetti.jpg" alt="confetti"/>
+                    </header>
+                    <div class="articleContent">
+                        <div class="author">By Claire Robinson</div>
+                        <a><h4>Our invite-only Beta accounts are now live!</h4></a>
+                        <p class="description">
+                            After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+                            It’s easy to request an invite through the site ...
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta.
-  It’s easy to request an invite through the site ...
+    <footer>
+        <div class="content grid three-thirds">
+            <aside>
+                <div class="logo"></div>
+            </aside>
+
+            <ul class="grid half-half">
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Support</li>
+                <li>Privacy Policy</li>
+            </ul>
+
+            <aside>
+                <button>Request Invite</button>
+
+                <div class="copyright">
+                    © Easybank. All Rights Reserved
+                </div>
+            </aside>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://danielwahl.lu">Daniel Wahl</a>.
+        </div>
+    </footer>
 
 
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
 </body>
 </html>

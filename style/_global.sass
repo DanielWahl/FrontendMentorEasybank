@@ -13,3 +13,87 @@ html, body
 
 	a
 		color: hsl(228, 45%, 44%)
+
+	-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		background: $lightBase
+		margin: 0
+
+code
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+.global
+	min-width: 100vw
+	min-height: 100vh
+
+
+.content
+	width: calc(100% - 2rem)
+	padding: 1rem 1rem
+	max-width: $content
+	margin: 0 auto
+
+	&.marginTop
+		margin-top: 1rem
+
+.overlay
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100vw
+	background: rgba(18,29,37,0.43)
+	z-index: 200
+
+	display: none
+
+	&.show, &.active
+		display: block
+
+
+.logo
+	background: url("../images/logo.svg") no-repeat center
+	width: 200px
+	height: calc(#{$navHeight} - 2rem)
+
+/**** FONT ****/
+h1, h2, h3, h4, h5
+	font-size: 3.5rem
+	font-weight: 300
+	padding: 1rem 0
+
+h2
+	font-size: 2.8rem
+
+h3
+	font-size: 1.4rem
+
+h4
+	font-size: 1.1rem
+
+h5
+	font-size: 1.1rem
+
+img
+	width: 100%
+
+a
+	text-decoration: none
+	color: $darkText
+	cursor: pointer
+
+	&:hover
+		color: $green
+
+p, span
+	line-height: 1.5rem
+	font-weight: 300
+
+
+ul, ol
+	margin-left: 1rem
+
+	&.grid
+		grid-gap: 1rem
+		li
+			list-style: none
